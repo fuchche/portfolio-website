@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://shresthayubaraj7.com.np/sitemap.xml

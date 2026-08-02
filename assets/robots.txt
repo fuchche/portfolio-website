@@ -1,0 +1,7 @@
+# www.robotstxt.org/
+# Yubaraj Shrestha - Portfolio Robots File
+
+User-agent: *
+Allow: /
+
+Sitemap: https://shresthayubaraj7.com.np/sitemap.xml

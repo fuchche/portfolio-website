@@ -1,0 +1,191 @@
+/* ==========================================================================
+   Yubraj Shrestha - Responsive Stylesheet
+   Adapts layout smoothly across Ultra-Wide, Laptop, Tablet, and Mobile
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Large Screens & Desktop (Max Width 1200px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1200px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+  .hero-image-inner {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Medium Screens & Laptops (Max Width 992px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 992px) {
+  section {
+    padding: 70px 0;
+  }
+
+  .navbar-collapse {
+    background: var(--nav-bg);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    margin-top: 1rem;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 15px 35px var(--shadow-color);
+  }
+
+  .nav-link {
+    padding: 10px 16px !important;
+    margin-bottom: 4px;
+  }
+
+  .theme-toggle-btn {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .hero-section {
+    padding-top: 120px;
+    text-align: center;
+  }
+
+  .hero-greeting {
+    margin: 0 auto 1.25rem;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+
+  .hero-image-wrap {
+    margin-top: 3rem;
+  }
+
+  .hero-experience-badge {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+  }
+
+  /* Single Column Timeline on Tablets & Mobile */
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    left: 0 !important;
+    padding-left: 55px !important;
+    padding-right: 0 !important;
+  }
+
+  .timeline-item:nth-child(odd) .timeline-dot,
+  .timeline-item:nth-child(even) .timeline-dot {
+    left: 10px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Tablets & Mobile Portrait (Max Width 768px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .hero-title {
+    font-size: 2.25rem;
+  }
+
+  .typed-text-wrap {
+    font-size: 1.35rem;
+    min-height: 2rem;
+  }
+
+  .hero-image-inner {
+    width: 270px;
+    height: 270px;
+  }
+
+  .stat-card {
+    margin-bottom: 1rem;
+  }
+
+  .btn-custom {
+    padding: 10px 22px;
+    font-size: 0.9rem;
+  }
+
+  .portfolio-filters {
+    gap: 0.5rem;
+  }
+
+  .filter-btn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+  }
+
+  .testimonial-card {
+    padding: 1.5rem;
+  }
+
+  .testimonial-quote {
+    font-size: 1rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Small Mobile Devices (Max Width 480px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 1.85rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-buttons .btn-custom {
+    width: 100%;
+  }
+
+  .hero-image-inner {
+    width: 220px;
+    height: 220px;
+  }
+
+  .hero-experience-badge {
+    width: 90%;
+    padding: 8px 14px;
+  }
+
+  .badge-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .badge-text strong {
+    font-size: 0.95rem;
+  }
+
+  #backToTop {
+    bottom: 20px;
+    right: 20px;
+    width: 42px;
+    height: 42px;
+    font-size: 1rem;
+  }
+}
